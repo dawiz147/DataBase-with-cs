@@ -5,8 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DataBase"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800"
+        Closing="Window_Closing">
     <Grid>
-        
+
+        <Image HorizontalAlignment="Left" Height="355" Margin="10,10,0,0" VerticalAlignment="Top" Width="398" Source="database-1954920_640.jpg" Grid.Row="0" Grid.Column="0" RenderTransformOrigin="0.5,0.5" Stretch="Fill"/>
+        <Label Content="Login to database" HorizontalAlignment="Left" Margin="442,34,0,0" VerticalAlignment="Top" Height="43" Width="340" RenderTransformOrigin="1,1" HorizontalContentAlignment="Center"/>
+        <Label x:Name="datasource_input_text" Content="datasource" HorizontalAlignment="Left" Margin="442,82,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.485,0.456"/>
+        <TextBox x:Name="datasource_input" HorizontalAlignment="Left" Height="23" Margin="518,85,0,0" TextWrapping="Wrap" Text="localhost" VerticalAlignment="Top" Width="154"/>
+        <Label x:Name="port_input_text" Content="port" HorizontalAlignment="Left" Margin="442,110,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.485,0.456"/>
+        <TextBox x:Name="port_input" HorizontalAlignment="Left" Height="23" Margin="518,113,0,0" TextWrapping="Wrap" Text="3306" VerticalAlignment="Top" Width="154"/>
+        <Label x:Name="username_input_text" Content="username" HorizontalAlignment="Left" Margin="442,138,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.485,0.456"/>
+        <TextBox x:Name="username_input" HorizontalAlignment="Left" Height="23" Margin="518,141,0,0" TextWrapping="Wrap" Text="root" VerticalAlignment="Top" Width="154"/>
+        <Label x:Name="database_input_text" Content="database" HorizontalAlignment="Left" Margin="442,166,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.485,0.456"/>
+        <TextBox x:Name="database_input" HorizontalAlignment="Left" Height="23" Margin="518,169,0,0" TextWrapping="Wrap" Text="employes" VerticalAlignment="Top" Width="154"/>
+        <Button Content="Connect to database" HorizontalAlignment="Left" Margin="518,246,0,0" VerticalAlignment="Top" Width="154" Click="Button_Click"/>
+
     </Grid>
 </Window>
