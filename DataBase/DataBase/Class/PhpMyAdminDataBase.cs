@@ -34,6 +34,7 @@ namespace DataBase
         {
             mySqlConnection = new MySqlConnection(MySQLConnectionString_);
             mySqlConnection.Open();
+            
             if (mySqlConnection.State == System.Data.ConnectionState.Open)
             {
                 MessageBox.Show(" connection sucessfull ");
